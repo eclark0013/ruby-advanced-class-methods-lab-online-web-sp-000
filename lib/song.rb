@@ -7,13 +7,14 @@ class Song
   end
 
   def self.create
-    song=self.new(nil)
+    song=self.new
     @@all<<song
     song
   end
 
   def self.new_by_name(name)
-    self.new(name)
+    self.new
+    @name=name
   end
 
   def self.create_by_name(name)
@@ -21,8 +22,7 @@ class Song
     @@all<<song
   end
 
-  def initialize(name)
-    @name=name
+  def initialize
   end
 
   def save
