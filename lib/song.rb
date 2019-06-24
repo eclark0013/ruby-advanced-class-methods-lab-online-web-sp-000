@@ -22,7 +22,7 @@ class Song
     self.new(name)
   end
 
-  def initialize(name=nil)
+  def initialize(name)
     @name=name
   end
 
