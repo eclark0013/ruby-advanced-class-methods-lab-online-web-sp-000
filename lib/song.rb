@@ -13,11 +13,14 @@ class Song
     @@all<<song
     song
   end
-binding.pry
+
   def self.new_by_name(the_name)
     song=Song.create
     song.name=the_name
   end
+
+  binding.pry
+
 
   def self.create_by_name(name)
     song=Song.new_by_name(name)
