@@ -18,6 +18,7 @@ class Song
 
   def self.create_by_name(name)
     song=Song.new(name)
+    @@all<<song
   end
 
   def initialize(name=nil)
