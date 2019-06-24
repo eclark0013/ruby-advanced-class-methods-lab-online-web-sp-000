@@ -7,7 +7,7 @@ class Song
   end
 
   def self.create(name)
-    song=Song.new
+    song=self.new
     unless Song.all.include?(song)
       Song<<song
     end
