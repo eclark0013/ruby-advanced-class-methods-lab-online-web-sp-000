@@ -16,8 +16,9 @@ class Song
     @name=name
   end
 
-#  def initialize
-#    self.new_by_name
+  def initialize(name)
+    self.new_by_name
+  end
 
   def save
     self.class.all << self
