@@ -19,13 +19,14 @@ class Song
     song.name=the_name
   end
 
-  binding.pry
-
 
   def self.create_by_name(name)
     song=Song.new_by_name(name)
     @@all<<song
   end
+
+  binding.pry
+
 
   def initialize
   end
