@@ -6,11 +6,9 @@ class Song
     @@all
   end
 
-  def self.create(name)
-    song=self.new
-    song.name=name
-    unless Song.all.include?(song)
-      Song<<song
+  def self.create
+    song=Song.new
+    Song<<song
     end
   end
 
