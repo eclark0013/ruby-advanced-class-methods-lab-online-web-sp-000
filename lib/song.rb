@@ -8,6 +8,7 @@ class Song
 
   def self.create(name)
     song=self.new
+    song.name=name
     unless Song.all.include?(song)
       Song<<song
     end
