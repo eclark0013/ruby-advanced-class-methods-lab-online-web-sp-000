@@ -13,7 +13,7 @@ class Song
   end
 
   def self.new_by_name(name)
-    @name=name
+    song.new(name)
   end
 
   def initialize(name=nil)
