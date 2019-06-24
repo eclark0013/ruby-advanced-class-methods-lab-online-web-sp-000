@@ -6,6 +6,13 @@ class Song
     @@all
   end
 
+  def self.create(name)
+    song=Song.new
+    unless Song.all.include?(song)
+      Song<<song
+    end
+  end
+
   def save
     self.class.all << self
   end
