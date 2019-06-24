@@ -24,7 +24,6 @@ class Song
     song=Song.new_by_name(name)
   end
 
-  binding.pry
 
 
   def initialize
